@@ -1,0 +1,11 @@
+📈 Top KPI Shifts
+
+N02BE changed by 90.02% - There was a notable increase in this category, suggesting a need to investigate potential demand spikes or promotional activity.
+N05C changed by -38.46% - The category showed a notable decrease, indicating a possible drop in supply or demand.
+M01AE changed by 26.25% - There was a notable increase that warrants checking recent promotional activity or demand changes.
+
+---
+Generated from: salesmonthly.csv (last complete month used)
+Generated on: 13 Jul 2026, 06:16 PM
+KPIs analyzed: 3
+Status: Human Review Required
