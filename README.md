@@ -1,5 +1,5 @@
 # Pharma Sales MIS Automation
-![Dashboard Screenshot](dashboard_screenshot.png)
+![Dashboard Screenshot](dashboard/dashboard_screenshot.png)
 
 An automated MIS reporting pipeline for pharmaceutical sales data — combining SQL, Python, and AI to cut the manual reporting cycle from hours to seconds, while keeping a human in control of anything that gets sent out.
 
