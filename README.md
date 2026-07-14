@@ -17,6 +17,7 @@ MIS/reporting teams spend hours every week pulling numbers into dashboards and t
 6. **Human-in-the-Loop Delivery** — the pipeline drafts an email (as a `.eml` file, opens directly in Outlook) with the report attached. **It never sends automatically** — a human must review and click send themselves. This is a deliberate design choice: in a real enterprise environment, no AI-generated report should go to leadership unedited.
 7. **Power BI Dashboard** — MTD/QTD/YTD DAX measures, trend visualization, category breakdown.
 8. **Scheduled Automation** — the entire pipeline (steps 1–6) runs on a schedule via Windows Task Scheduler, regenerating the report with zero manual intervention.
+9. **Excel/Power Query Companion Report** — the same SQL data is also transformed via Power Query (unpivoting wide category columns into a clean long format) and summarized in a PivotTable/PivotChart, demonstrating the Excel-native MIS reporting workflow alongside the automated pipeline.
 
 ## A Real Data Quality Catch
 
