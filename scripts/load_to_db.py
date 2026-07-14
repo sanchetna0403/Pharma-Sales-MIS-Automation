@@ -2,10 +2,10 @@ import pandas as pd
 import sqlite3
 
 # load the CSV
-df = pd.read_csv("salesmonthly.csv")
+df = pd.read_csv("../data/salesmonthly.csv")
 
 # create (or connect to) a database file called mis_data.db
-conn = sqlite3.connect("mis_data.db")
+conn = sqlite3.connect("../output/mis_data.db")
 
 # save the dataframe as a table called 'sales' inside that database
 df.to_sql("sales", conn, if_exists="replace", index=False)

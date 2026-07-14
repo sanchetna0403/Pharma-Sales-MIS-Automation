@@ -9,7 +9,7 @@ import datetime
 import os
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-top3 = pd.read_csv("top3_kpis.csv")
+top3 = pd.read_csv("../output/top3_kpis.csv")
 kpi_text = top3.to_string(index=False)
 
 
@@ -42,5 +42,5 @@ Status: Human Review Required
 final_report = summary_text + footer
 print(final_report)
 
-with open("mis_report.txt", "w", encoding="utf-8") as f:
+with open("../output/mis_report.txt", "w", encoding="utf-8") as f:
     f.write(final_report)

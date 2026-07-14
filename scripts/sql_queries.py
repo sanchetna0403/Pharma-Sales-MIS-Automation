@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-conn = sqlite3.connect("mis_data.db")
+conn = sqlite3.connect("../output/mis_data.db")
 
 # Query 1: Total sales per category (simple aggregation)
 q1 = """

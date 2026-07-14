@@ -1,7 +1,7 @@
 from fpdf import FPDF
 
 # read the report we generated earlier
-with open("mis_report.txt", "r", encoding="utf-8") as f:
+with open("../output/mis_report.txt", "w", encoding="utf-8") as f:
     report_text = f.read()
     report_text = report_text.encode("latin-1", errors="ignore").decode("latin-1")
 
@@ -18,6 +18,6 @@ for line in report_text.split("\n"):
         pdf.ln(8)
     else:
         pdf.multi_cell(page_width, 8, line)
-
-pdf.output("MIS_Report.pdf")
+        
+pdf.output("../output/MIS_Report.pdf")
 print("Saved MIS_Report.pdf")

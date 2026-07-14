@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-conn = sqlite3.connect("mis_data.db")
+conn = sqlite3.connect("../output/mis_data.db")
 df = pd.read_sql("SELECT * FROM sales", conn)
 conn.close()
 
@@ -54,5 +54,5 @@ top3 = kpi_df.head(3)
 print(top3[["category", "pct_change", "reason"]])
 
 # save this for the next step (AI layer)
-top3.to_csv("top3_kpis.csv", index=False)
+top3.to_csv("../output/top3_kpis.csv", index=False)
 print("\nSaved top3_kpis.csv for next step")
